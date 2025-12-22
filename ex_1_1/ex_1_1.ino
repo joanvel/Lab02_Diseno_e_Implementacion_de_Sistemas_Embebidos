@@ -18,10 +18,10 @@ const char* password = "12345678";
 // ==============================
 // CONFIG NTP (para timestamp)
 // ==============================
-const char* ntpServer = "pool.ntp.org";   // ⬅️ CAMBIO
-const long gmtOffset_sec = -18000;        // Colombia UTC-5  ⬅️ CAMBIO
-const int daylightOffset_sec = 0;         // ⬅️ CAMBIO
-String lastUpdateTimestamp = "Never";    // ⬅️ CAMBIO
+const char* ntpServer = "pool.ntp.org";
+const long gmtOffset_sec = -18000;
+const int daylightOffset_sec = 0;
+String lastUpdateTimestamp = "Never";
 
 float temp;
 
@@ -93,7 +93,7 @@ void handleData() {
   // data.temperature = 1.0;
   // data.humidity = 0.0;
 
-  // ========== ⬅️ OBTENER TIMESTAMP NTP ==========
+  // ========== OBTENER TIMESTAMP NTP ==========
   struct tm timeinfo;
   if (getLocalTime(&timeinfo)) {
     char buffer[30];
@@ -137,7 +137,7 @@ void setup() {
   Serial.println("\nConectado!");
   Serial.println(WiFi.localIP()); // Dirección del servidor
 
-  // ============ ⬅️ INICIAR NTP PARA TIMESTAMP ============
+  // ============ INICIAR NTP PARA TIMESTAMP ============
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   // ========================================================
 

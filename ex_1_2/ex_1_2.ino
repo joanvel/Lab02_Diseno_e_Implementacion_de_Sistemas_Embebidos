@@ -37,9 +37,9 @@ const char* password = "12345678";
 // ==============================
 // CONFIG NTP (para timestamp)
 // ==============================
-const char* ntpServer = "pool.ntp.org";   // ⬅️ CAMBIO
-const long gmtOffset_sec = -18000;        // Colombia UTC-5  ⬅️ CAMBIO
-const int daylightOffset_sec = 0;         // ⬅️ CAMBIO
+const char* ntpServer = "pool.ntp.org";
+const long gmtOffset_sec = -18000;
+const int daylightOffset_sec = 0;
 
 // ==============================
 // SERVIDOR WEB
@@ -48,7 +48,7 @@ WebServer server(80);
 
 // Variables globales
 int motorSetpointRPM = 0;
-String lastUpdateTimestamp = "Never";    // ⬅️ CAMBIO
+String lastUpdateTimestamp = "Never";
 
 // ==============================
 // PÁGINA WEB (igual que antes)
@@ -89,7 +89,7 @@ const char MAIN_page[] PROGMEM = R"rawliteral(
       });
     }
 
-    // 🔄 Actualizar UI cada 1 segundo
+    // Actualizar UI cada 1 segundo
     setInterval(() => {
       fetch('/status')
         .then(response => response.json())
@@ -131,7 +131,7 @@ void handleSetRPM() {
 
 void handleStatus() {
 
-  // ========== ⬅️ OBTENER TIMESTAMP NTP ==========
+  // ========== OBTENER TIMESTAMP NTP ==========
   struct tm timeinfo;
   if (getLocalTime(&timeinfo)) {
     char buffer[30];
@@ -201,7 +201,7 @@ void setup() {
     Serial.print("IP del servidor: ");
     Serial.println(WiFi.localIP());
 
-    // ============ ⬅️ INICIAR NTP PARA TIMESTAMP ============
+    // ============ INICIAR NTP PARA TIMESTAMP ============
     configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
     // ========================================================
 
