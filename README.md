@@ -23,15 +23,21 @@ Cada reto se encuentra organizado en su propia carpeta, con código fuente indep
 ## Estructura del Repositorio
 
 ```text
-├── ex3/
-│ ├── ex3.ino
+├── ex_1_1/
+│ ├── ex_1_1.ino
 │ ├── README.md
 │
-├── ex4/
+├── ex_1_2/
 │ ├── Motor.h
 │ ├── Motor.ino
-│ ├── ex4.ino
+│ ├── ex_1_2.ino
 │ ├── README.md
+|
+├── ex2/
+| ├── node-red/
+| | ├── flows.json
+| ├── ex2.ino
+| ├── README.md
 │
 ├── Informe_lab.pdf
 │
