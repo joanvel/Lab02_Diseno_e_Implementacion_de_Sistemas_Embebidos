@@ -83,4 +83,4 @@ Para facilitar el uso del sistema:
 
 ### La carpeta Demonstration contiene un video del funcionamiento del sistema
 
-Para mayor información revisar el reporte técnico en la raíz del repositorio y el.
+Para mayor información revisar el reporte técnico en la raíz del repositorio.
