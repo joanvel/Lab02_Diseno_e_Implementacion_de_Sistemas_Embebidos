@@ -24,6 +24,8 @@ Cada reto se encuentra organizado en su propia carpeta, con código fuente indep
 
 ```text
 ├── ex_1_1/
+|   ├── Demonstration/
+|       └── video.mp4
 │   ├── ex_1_1.ino
 │   └── README.md
 │
@@ -34,6 +36,8 @@ Cada reto se encuentra organizado en su propia carpeta, con código fuente indep
 │   └── README.md
 |
 ├── ex2/
+|   ├── Demonstration/
+|       └── video.mp4
 |   ├── node-red/
 |       └── flows.json
 |   ├── ex2.ino
