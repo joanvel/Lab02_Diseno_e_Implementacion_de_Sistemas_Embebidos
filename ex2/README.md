@@ -7,9 +7,12 @@ Este módulo implementa un sistema de comunicación bidireccional mediante MQTT 
 ```text
 /ex2
 │
+├── Demonstration/
+|   └── video.mp4    // Video demostración del sistema
 ├── node-red/        // Carpeta con el proyecto en node-red
-| ├── flows.json    // Proyecto en node-red
-└── ex2.ino     // Archivo principal con FSM + WiFi + servidor web
+|   └── flows.json    // Proyecto en node-red
+├── ex2.ino     // Archivo principal con FSM + WiFi + servidor web
+└── README.md
 ```
 ## Conectividad y seguridad
 * El ESP32 se conecta a una red WiFi local.
