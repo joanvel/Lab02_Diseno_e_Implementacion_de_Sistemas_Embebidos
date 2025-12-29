@@ -23,6 +23,7 @@ Este módulo implementa un sistema de comunicación bidireccional mediante MQTT 
 ## Comunicación MQTT
 ### Tópicos utilizados
 | Tipo | Tópico |
+|------|--------|
 | Publicación | esp32/sensors/dht22 |
 | Suscripción | esp32/control/rpm |
 
@@ -77,4 +78,6 @@ Para facilitar el uso del sistema:
   2. Conectar su propio broker o usar HiveMQ
   3. Controlar el ESP32 desde su PC sin modificar el firmware
 
-Para mayor información revisar el reporte técnico en la raíz del repositorio.
+### La carpeta Demonstration contiene un video del funcionamiento del sistema
+
+Para mayor información revisar el reporte técnico en la raíz del repositorio y el.
