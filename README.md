@@ -24,20 +24,20 @@ Cada reto se encuentra organizado en su propia carpeta, con código fuente indep
 
 ```text
 ├── ex_1_1/
-│ ├── ex_1_1.ino
-│ ├── README.md
+│   ├── ex_1_1.ino
+│   └── README.md
 │
 ├── ex_1_2/
-│ ├── Motor.h
-│ ├── Motor.ino
-│ ├── ex_1_2.ino
-│ ├── README.md
+│   ├── Motor.h
+│   ├── Motor.ino
+│   ├── ex_1_2.ino
+│   └── README.md
 |
 ├── ex2/
-| ├── node-red/
-| | ├── flows.json
-| ├── ex2.ino
-| ├── README.md
+|   ├── node-red/
+|       └── flows.json
+|   ├── ex2.ino
+|   └── README.md
 │
 ├── Informe_lab.pdf
 │
