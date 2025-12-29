@@ -107,4 +107,6 @@ El timestamp se agrega a cada respuesta JSON y se muestra en la web.
 7. Abrir el monitor serial a 115200 baudios.
 8. Ingresar en un navegador a la IP mostrada por Serial.
 
+### En la carpeta Demostration se encuentra un video con el funcionamiento del sistema.
+
 Para mayor información, revisar el reporte técnico en la raíz del repositorio.
